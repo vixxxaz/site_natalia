@@ -1,30 +1,42 @@
+@font-face {
+    font-family: "Antonio";
+    src: url(../font/static/Antonio-Bold.ttf) format("truetype"), url(../font/static/Antonio-ExtraLight.ttf) format("truetype"), url(../font/static/Antonio-Light.ttf) format("truetype"), url(../font/static/Antonio-Medium.ttf) format("truetype"), url(../font/static/Antonio-Regular.ttf) format("truetype"), url(../font/static/Antonio-SemiBold.ttf) format("truetype"), url(../font/static/Antonio-Thin.ttf) format("truetype");
+}
+
 body {
     background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #page {
     background-image: url("../images/img1.jpg");
     object-fit: cover;
-    font-size: large;
-    color: aliceblue;
+    color: #e1941c;
     width: 1500px;
     height: 1500px;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+    font-family: "Antonio", "Times New Roman", "Times", "serif";
 }
 
 #banner {
-    background-color: rgb(19, 2, 2);
+    background-image: linear-gradient(to bottom left, black, red, rgb(216, 144, 20));
+    opacity: 0.9;
     border: 2px solid rgb(250, 29, 32);
     border-radius: 15px 15px;
     padding: 15px;
     margin-right: 0.5px;
+    color: rgb(55, 13, 13);
+}
+
+.titrePrincipal {
+    font-weight: bold;
+    font-size: 4.8rem;
 }
 
 .titreinfo {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 .intro {
@@ -32,12 +44,20 @@ body {
     font-size: 1.7rem;
 }
 
+.titreExp {
+    text-shadow: 4px 4px 5px black;
+}
+
 .textinfo {
     width: 50%;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px black;
 }
 
 .contenvideo {
     display: flex;
+    width: 50%;
+    flex-direction: column;
     align-items: center;
     margin-top: 50px;
     border: 1px solid royalblue;
@@ -83,7 +103,12 @@ form {
 }
 
 .foot_content {
-    background-color: brown;
+    background-image: linear-gradient(to top left, black, red, rgb(216, 144, 20));
     width: 100%;
     display: flex;
+    color: black;
+}
+
+.lienMail {
+    text-decoration: none;
 }
