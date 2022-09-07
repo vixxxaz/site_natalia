@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#page {
+    background-image: url("../images/img1.jpg");
+    object-fit: cover;
+    font-size: large;
+    color: aliceblue;
+    width: 1500px;
+    height: 1500px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+#banner {
+    background-color: rgb(19, 2, 2);
+    border: 2px solid rgb(250, 29, 32);
+    border-radius: 15px 15px;
+    padding: 15px;
+    margin-right: 0.5px;
+}
+
+.titreinfo {
+    font-size: 1.6rem;
+}
+
+.intro {
+    padding: 15px;
+    font-size: 1.7rem;
+}
+
+.textinfo {
+    width: 50%;
+}
+
+.contenvideo {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px solid royalblue;
+}
+
+.contenaireform {
+    padding: 15px;
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+#nom {
+    width: 100%;
+}
+
+#prenom {
+    width: 100%;
+}
+
+#tel {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#projet {
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foot_content {
+    background-color: brown;
+    width: 100%;
+    display: flex;
+}
