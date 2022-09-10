@@ -3,8 +3,11 @@
     src: url(../font/static/Antonio-Bold.ttf) format("truetype"), url(../font/static/Antonio-ExtraLight.ttf) format("truetype"), url(../font/static/Antonio-Light.ttf) format("truetype"), url(../font/static/Antonio-Medium.ttf) format("truetype"), url(../font/static/Antonio-Regular.ttf) format("truetype"), url(../font/static/Antonio-SemiBold.ttf) format("truetype"), url(../font/static/Antonio-Thin.ttf) format("truetype");
 }
 
-body {
-    background-color: black;
+body,
+html {
+    background-image: url(../images/img2_50.jpg);
+    object-fit: cover;
+    height: 100%;
 }
 
 #page {
@@ -12,7 +15,7 @@ body {
     object-fit: cover;
     color: #e1941c;
     width: 1500px;
-    height: 1500px;
+    min-height: 100%;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -21,7 +24,7 @@ body {
 
 #banner {
     background-image: linear-gradient(to bottom left, black, red, rgb(216, 144, 20));
-    opacity: 0.9;
+    opacity: 0.8;
     border: 2px solid rgb(250, 29, 32);
     border-radius: 15px 15px;
     padding: 15px;
@@ -107,8 +110,57 @@ form {
     width: 100%;
     display: flex;
     color: black;
+    margin-top: 83px;
 }
 
 .lienMail {
     text-decoration: none;
+}
+
+#page {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+        height: 300%;
+    }
+    to {
+        margin-top: 0%;
+        height: 100%;
+    }
+}
+
+.textinfo {
+    animation-delay: 0.7s;
+    animation-duration: 4s;
+    animation-name: text-clip;
+    animation-direction: normal;
+}
+
+@keyframes text-clip {
+    from {
+        visibility: hidden;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .titrePrincipal {
+        font-size: 3rem;
+    }
+    .titreinfo {
+        font-size: 1rem;
+    }
+    .textinfo {
+        font-size: 0.8rem;
+    }
+    .titreExp {
+        font-size: 1rem;
+    }
 }
